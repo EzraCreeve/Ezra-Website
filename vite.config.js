@@ -5,14 +5,14 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main:             resolve(__dirname, 'index.html'),
-        ghl:              resolve(__dirname, 'ghl.html'),
-        'web-development': resolve(__dirname, 'web-development.html'),
-        seo:              resolve(__dirname, 'seo.html'),
-        'digital-marketing': resolve(__dirname, 'digital-marketing.html'),
-        'social-media':   resolve(__dirname, 'social-media.html'),
-        copywriting:      resolve(__dirname, 'copywriting.html'),
-        'virtual-assistant': resolve(__dirname, 'virtual-assistant.html'),
+        main:                resolve(__dirname, 'index.html'),
+        gohighlevel:         resolve(__dirname, 'services/gohighlevel/index.html'),
+        'web-development':   resolve(__dirname, 'services/web-development/index.html'),
+        seo:                 resolve(__dirname, 'services/seo/index.html'),
+        'digital-marketing': resolve(__dirname, 'services/digital-marketing/index.html'),
+        'social-media':      resolve(__dirname, 'services/social-media/index.html'),
+        copywriting:         resolve(__dirname, 'services/copywriting/index.html'),
+        'virtual-assistant': resolve(__dirname, 'services/virtual-assistant/index.html'),
       }
     }
   }
