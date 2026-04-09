@@ -6,6 +6,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main:                resolve(__dirname, 'index.html'),
+        'book-a-call':       resolve(__dirname, 'book-a-call/index.html'),
         gohighlevel:         resolve(__dirname, 'services/gohighlevel/index.html'),
         'web-development':   resolve(__dirname, 'services/web-development/index.html'),
         seo:                 resolve(__dirname, 'services/seo/index.html'),

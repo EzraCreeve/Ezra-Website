@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Strategy Call — Ezra Solutions</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <style>
+      .book-hero {
+        background: var(--charcoal);
+        padding: 140px 0 64px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+      }
+      .book-hero h1 {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 700;
+        font-size: clamp(36px, 5.5vw, 68px);
+        color: #fff;
+        line-height: 1.05;
+        letter-spacing: -.02em;
+        margin-bottom: 16px;
+      }
+      .book-hero h1 em { font-style: italic; color: var(--orange); }
+      .book-hero p {
+        font-size: 16px;
+        color: rgba(255,255,255,.55);
+        line-height: 1.75;
+        max-width: 520px;
+        margin: 0 auto;
+      }
+      .book-trust {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        flex-wrap: wrap;
+        margin-top: 32px;
+      }
+      .book-trust-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        color: rgba(255,255,255,.4);
+        letter-spacing: .05em;
+        text-transform: uppercase;
+      }
+      .book-trust-dot {
+        width: 6px; height: 6px;
+        border-radius: 50%;
+        background: var(--orange);
+        flex-shrink: 0;
+      }
+      .calendly-section {
+        background: var(--offwhite);
+        padding: 64px 0 80px;
+      }
+      .calendly-wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 40px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 48px rgba(0,0,0,.07), 0 1px 8px rgba(0,0,0,.04);
+        overflow: hidden;
+      }
+      .what-to-expect {
+        background: var(--charcoal);
+        padding: 80px 0;
+      }
+      .what-to-expect .section-title { color: #fff; text-align: center; margin-bottom: 48px; }
+      .expect-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        max-width: 860px;
+        margin: 0 auto;
+      }
+      .expect-card {
+        background: rgba(255,255,255,.04);
+        border: 1px solid rgba(255,255,255,.07);
+        border-top: 3px solid var(--orange);
+        border-radius: 6px;
+        padding: 28px 24px;
+      }
+      .expect-num {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 40px; font-weight: 700;
+        color: rgba(232,98,26,.25); line-height: 1; margin-bottom: 12px;
+      }
+      .expect-card h4 { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+      .expect-card p  { font-size: 13px; color: rgba(255,255,255,.45); line-height: 1.65; }
+      @media (max-width: 900px) {
+        .calendly-wrapper { margin: 0 24px; padding: 0; }
+        .expect-grid { grid-template-columns: 1fr; max-width: 480px; }
+        .book-trust { gap: 20px; }
+      }
+      @media (max-width: 600px) {
+        .book-hero { padding: 120px 20px 48px; }
+        .calendly-section { padding: 40px 0 60px; }
+        .what-to-expect { padding: 60px 0; }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">
+          <span class="logo-ezra">ezra</span> <span>Solutions</span>
+          <small>Digital Services</small>
+        </a>
+        <ul class="nav-links">
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/#audience">Who We Serve</a></li>
+          <li><a href="/#process">Process</a></li>
+        </ul>
+        <a href="/book-a-call" class="btn btn-primary nav-cta">Book a Strategy Call</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="book-hero">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-bg-glow-2"></div>
+      <div class="hero-grid-lines"></div>
+      <div class="container" style="position:relative; z-index:2;">
+        <span class="overline">Free Consultation</span>
+        <h1>Let's Talk About<br><em>Your Vision.</em></h1>
+        <p>Book a free 30-minute strategy call. We'll listen, understand your goals, and give you a clear picture of how Ezra Solutions can help — no pressure, no commitment.</p>
+        <div class="book-trust">
+          <div class="book-trust-item"><div class="book-trust-dot"></div>Free 30-minute call</div>
+          <div class="book-trust-item"><div class="book-trust-dot"></div>No commitment required</div>
+          <div class="book-trust-item"><div class="book-trust-dot"></div>Faith-driven team</div>
+          <div class="book-trust-item"><div class="book-trust-dot"></div>Clear, honest advice</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALENDLY EMBED -->
+    <section class="calendly-section">
+      <div class="calendly-wrapper">
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/ezra-solutions/30min?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
+      </div>
+    </section>
+
+    <!-- WHAT TO EXPECT -->
+    <section class="what-to-expect">
+      <div class="container">
+        <h2 class="section-title">What to <em>Expect</em></h2>
+        <div class="expect-grid">
+          <div class="expect-card fade-in">
+            <div class="expect-num">01</div>
+            <h4>We Listen First</h4>
+            <p>We'll ask about your business, your challenges, and your goals — no pitch, just genuine interest in understanding where you are.</p>
+          </div>
+          <div class="expect-card fade-in">
+            <div class="expect-num">02</div>
+            <h4>Honest Recommendations</h4>
+            <p>We'll share what we think will actually help — whether that's one service or several. No upselling, no fluff.</p>
+          </div>
+          <div class="expect-card fade-in">
+            <div class="expect-num">03</div>
+            <h4>A Clear Path Forward</h4>
+            <p>You'll leave the call with clarity — a practical next step you can act on, whether you work with us or not.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo"><span class="logo-ezra">ezra</span> <span>Solutions</span></div>
+            <div class="tagline">Excellence · Integrity · Service</div>
+            <p>A Christian-founded digital services company helping businesses, ministries, and entrepreneurs do excellent work — as unto the Lord.</p>
+            <div class="footer-faith">Integrity in Every Service.</div>
+          </div>
+          <div class="footer-col"><h5>Services</h5><ul>
+            <li><a href="/services/gohighlevel">GoHighLevel (GHL)</a></li>
+            <li><a href="/services/web-development">Web Development</a></li>
+            <li><a href="/services/seo">SEO Services</a></li>
+            <li><a href="/services/digital-marketing">Digital Marketing</a></li>
+            <li><a href="/services/copywriting">Copywriting</a></li>
+            <li><a href="/services/social-media">Social Media</a></li>
+            <li><a href="/services/virtual-assistant">Virtual Assistants</a></li>
+          </ul></div>
+          <div class="footer-col"><h5>Who We Serve</h5><ul>
+            <li><a href="/#audience">Small Businesses</a></li>
+            <li><a href="/#audience">Startups</a></li>
+            <li><a href="/#audience">Churches &amp; Ministries</a></li>
+            <li><a href="/#audience">Coaches &amp; Consultants</a></li>
+          </ul></div>
+          <div class="footer-col"><h5>Company</h5><ul>
+            <li><a href="/#about">About Us</a></li>
+            <li><a href="/#values">Our Values</a></li>
+            <li><a href="/#process">How We Work</a></li>
+            <li><a href="/book-a-call">Book a Call</a></li>
+          </ul></div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Ezra Solutions. All rights reserved.</p>
+          <div class="faith-mark">"Do your work as unto the Lord."</div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/base.js"></script>
+  </body>
+</html>
