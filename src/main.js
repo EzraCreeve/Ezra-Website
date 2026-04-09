@@ -51,3 +51,16 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 setTimeout(() => {
   document.querySelectorAll('.fade-in:not(.visible)').forEach(el => el.classList.add('visible'))
 }, 1500)
+
+// FAQ accordion functionality
+const faqItems = document.querySelectorAll('.faq-item')
+faqItems.forEach(item => {
+  const btn = item.querySelector('.faq-q')
+  btn.addEventListener('click', () => {
+    const isActive = item.classList.contains('active')
+    // Close all
+    faqItems.forEach(i => i.classList.remove('active'))
+    // Open clicked if it wasn't active
+    if (!isActive) item.classList.add('active')
+  })
+})
