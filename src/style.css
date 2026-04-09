@@ -316,6 +316,11 @@ nav.scrolled {
   align-items: center;
   gap: 16px;
 }
+/* Image avatar */
+img.founder-avatar {
+  object-fit: cover;
+}
+
 .founder-avatar {
   width: 52px; height: 52px;
   border-radius: 50%;
